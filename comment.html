@@ -25,23 +25,33 @@
     </section>
      
     <script>
-        //add button event handler
-     document.getElementById('submit-comment').addEventListener('click', function () {
-    //get user comment
+//         //add button event handler
+//      document.getElementById('submit-comment').addEventListener('click', function () {
+//     //get user comment
     
     
-        const commentBox =document.getElementById('new-comment')
-const userComment = commentBox.value;
+//         const commentBox =document.getElementById('new-comment')
+// const userComment = commentBox.value;
 
-//03 creat comment paragraph
-const newComment =document.createElement('p');
-newComment.innerText =commentBox.value;
-//4 append the comment
-const commenCtontainner =document.getElementById('comment-containner');
-commenCtontainner.appendChild(newComment);
-commentBox.value =''
+// //03 creat comment paragraph
+// const newComment =document.createElement('p');
+// newComment.innerText =commentBox.value;
+// //4 append the comment
+// const commenCtontainner =document.getElementById('comment-containner');
+// commenCtontainner.appendChild(newComment);
+// commentBox.value =''
 
-    })
+//     })
+document.getElementById('submit-comment').addEventListener('click', function () {
+    const commentBox = document.getElementById('new-comment');
+    const userComment = commentBox.value;
+    const newComment =document.createElement('p');
+    newComment.innerText = commentBox.value;
+    const commenCtontainner = document.getElementById('comment-containner');
+    commenCtontainner.appendChild(newComment);
+    commentBox.value = '';
+    
+})
 
 
 
